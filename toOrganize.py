@@ -8,7 +8,7 @@ arr = os.listdir()
 slash = "\\"
 
 for x in arr:
-    if os.path.isfile(x):
+    if os.path.isfile(x) and x!="toOrganize.py" and x!="toDisorganize.py":
         for i in x:
             if(i=="."):
                 
@@ -210,7 +210,7 @@ for x in arr:
                     print(newpath)
 
                 else:
-                    folder_name = x[x.rfind(i):len(x)]
+                    folder_name ="Other"
                     newpath = path + slash + folder_name
                     print(newpath)
 
