@@ -15,7 +15,7 @@ file_types = {
     "Video" : [ ".3g2" , ".3gp" , ".asf" , ".avi" , ".flv" , ".m4v" , ".mov" , ".mp4" , ".mpg" , ".rm" , ".srt" ,".swf" , ".vob" , ".wmv" ],
     "3DImage" : [ ".3dm" , ".3ds" , ".max" , ".obj" ],
     "RasterImage" : [ ".bmp" , ".dds" , ".gif" , ".jpg" , ".png" , ".psd" , ".thm" , ".tif" , ".yuv" , ".pspimage" , ".tga" , ".tiff" ],
-    "ThreeDImg" : [ ".3dm" , ".3ds" , ".max" , ".obj" ],
+    "3DImage" : [ ".3dm" , ".3ds" , ".max" , ".obj" ],
     "VectorImage" : [ ".ai" , ".eps" , ".ps" , ".svg" ],
     "PageLayout" : [ ".indd" , ".pct" , ".pdf" ],
     "Spreadsheet" : [ ".xlr" , ".xls" , ".xlsx" ],
@@ -41,7 +41,7 @@ for x in arr:
     fflag=0
     if os.path.isfile(x) and x!="toOrganize.py" and x!="toDisorganize.py":
         if("." in x):
-            extension_name = x[x.rfind("."):len(x)]
+            extension_name = x[x.index("."):]
             for file_type,extensions in file_types.items():
                 if extension_name in extensions:
                     fflag=1
