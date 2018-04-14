@@ -1,7 +1,7 @@
 # FolderSynchronizer
 📁📌 A python script that synchronizes all the files in a folder based on it's extension.
 
-Get your cluttered directores 🗍🗍🗍🗍🗍🗍🗍🗍🗍 organized 📁📂📁 
+Get your cluttered directories 🗍🗍🗍🗍🗍🗍🗍🗍🗍 organized 📁📂📁 
 
 ## Installation
  - Python >= v3.0 [get it here](https://www.python.org/downloads/)
